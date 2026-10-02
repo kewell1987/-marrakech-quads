@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marrakech Quad + Buggy Hire | WildTrail</title>
+  <meta name="description" content="Marrakech quad and buggy hire for unforgettable off-road adventures. Book your ride today.">
+  <style>
+    :root{
+      --ink:#102018; --muted:#617067; --cream:#f5f0e6; --sand:#d7b77b;
+      --lime:#c8e34b; --dark:#111713; --white:#fff; --line:#dfe4dc;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--cream);line-height:1.5}
+    a{text-decoration:none;color:inherit}
+    .nav{position:absolute;top:0;left:0;right:0;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:24px 6vw;color:#fff}
+    .logo{font-weight:900;letter-spacing:-.04em;font-size:1.2rem}.logo span{color:var(--lime)}
+    .links{display:flex;gap:28px;font-size:.92rem;font-weight:700}.links a:hover{color:var(--lime)}
+    .nav-cta{background:var(--lime);color:#10150f;padding:12px 18px;border-radius:999px;font-weight:900}
+    .hero{min-height:760px;
+    background-image:
+      linear-gradient(90deg,rgba(8,13,10,.84),rgba(8,13,10,.25)),
+      url('https://www.intotheblue.co.uk/images/Suppliers/Yorkshire-Activity-Centre/~th-500x500/~th-crop-YAC11-V350.jpg');
+    background-size:cover;background-position:center;display:grid;place-items:center;position:relative;overflow:hidden;background-color:#243025;color:#fff}
+    .hero:after{content:"";position:absolute;inset:auto -5% -120px;height:300px;background:var(--cream);transform:rotate(-4deg)}
+    .hero-content{width:min(1100px,88vw);position:relative;z-index:2;padding-top:80px}
+    .eyebrow{display:inline-flex;gap:8px;align-items:center;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:8px 12px;border-radius:999px;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em}
+    h1{font-size:clamp(3.3rem,8vw,7.4rem);line-height:.88;letter-spacing:-.07em;max-width:850px;margin:24px 0}
+    h1 em{color:var(--lime);font-style:normal}
+    .hero p{max-width:590px;font-size:1.12rem;color:#e6ebe5;margin-bottom:28px}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:15px 22px;border-radius:10px;font-weight:900;display:inline-flex;align-items:center;gap:8px}
+    .btn-primary{background:var(--lime);color:#10150f}.btn-secondary{border:1px solid rgba(255,255,255,.35);color:#fff;background:rgba(255,255,255,.06)}
+    .stats{display:flex;gap:32px;margin-top:42px}.stat strong{display:block;font-size:1.35rem}.stat span{font-size:.8rem;color:#cbd4cc}
+    section{padding:100px 6vw}.wrap{width:min(1100px,88vw);margin:auto}
+    .section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:42px}.section-head h2{font-size:clamp(2.2rem,5vw,4.2rem);line-height:.95;letter-spacing:-.06em}.section-head p{max-width:430px;color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .card-photo{height:180px;margin:-28px -28px 22px;background-size:cover;background-position:center;border-radius:18px 18px 0 0}
+    .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;position:relative;overflow:hidden}
+    .card.featured{background:var(--dark);color:#fff;border-color:var(--dark);transform:translateY(-10px)}
+    .tag{display:inline-block;background:var(--lime);color:#17200f;padding:6px 10px;border-radius:999px;font-size:.7rem;font-weight:900;text-transform:uppercase}
+    .card h3{font-size:1.7rem;margin:20px 0 8px}.price{font-size:2.8rem;font-weight:900;letter-spacing:-.05em}.price small{font-size:.85rem;font-weight:600;color:var(--muted)}
+    .featured .price small{color:#aab5ad}.card ul{list-style:none;margin:24px 0}.card li{padding:9px 0;border-top:1px solid #e7ebe6;font-size:.92rem}.featured li{border-color:#2e382f}
+    .card .btn{width:100%;justify-content:center}
+    .adventure{background:var(--dark);color:#fff}.adventure-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+    .adventure h2{font-size:clamp(2.5rem,5vw,5rem);line-height:.92;letter-spacing:-.06em;margin:18px 0}.adventure p{color:#b8c1ba;max-width:520px}
+    .checklist{margin-top:28px;display:grid;gap:13px}.check{display:flex;gap:12px;align-items:center}.check b{display:grid;place-items:center;width:28px;height:28px;background:var(--lime);color:#111;border-radius:50%;font-size:.8rem}
+    .visual{min-height:440px;border-radius:24px;background:
+      linear-gradient(145deg,rgba(20,29,22,.05),rgba(10,15,11,.65)),
+      radial-gradient(circle at 65% 42%,#b39a67 0 9%,transparent 10%),
+      radial-gradient(ellipse at 62% 55%,#202720 0 19%,transparent 20%),
+      linear-gradient(160deg,#71836c,#303b30 58%,#171c18);position:relative;overflow:hidden}
+    .visual:before,.visual:after{content:"";position:absolute;background:rgba(255,255,255,.08);height:70px;width:140%;transform:rotate(-18deg);left:-20%;top:58%}.visual:after{top:75%;height:90px}
+    .visual-label{position:absolute;left:24px;bottom:24px;background:rgba(10,15,11,.72);backdrop-filter:blur(8px);padding:12px 15px;border-radius:10px;font-weight:800}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{padding:28px;background:#ebe5d8;border-radius:18px}.num{font-size:3rem;font-weight:900;color:#b1bcae;line-height:1}.step h3{margin:20px 0 7px;font-size:1.3rem}
+
+    .media-showcase{background:#ebe5d8}
+    .video-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .video-card{display:block;border-radius:20px;overflow:hidden;background:#111713;box-shadow:0 12px 35px rgba(16,32,24,.12)}
+    .video-poster{min-height:430px;background-size:cover;background-position:center;display:flex;flex-direction:column;justify-content:space-between;padding:24px;color:#fff}
+    .play{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:var(--lime);color:#10150f;font-size:1.25rem;padding-left:4px;box-shadow:0 8px 25px rgba(0,0,0,.22)}
+    .video-poster div:last-child{display:flex;flex-direction:column;gap:5px}.video-poster b{font-size:1.35rem;letter-spacing:-.02em}.video-poster small{color:#d7ded8}
+    .media-note{margin-top:15px;color:var(--muted);font-size:.78rem}
+    .gallery{display:grid;grid-template-columns:1fr 1.35fr 1fr;gap:16px}
+    .gallery-img{min-height:270px;border-radius:18px;background-size:cover;background-position:center}
+    .gallery-img.tall{min-height:390px}
+    .faq{background:#fff}.faq-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:70px}.faq h2{font-size:clamp(2.4rem,5vw,4.4rem);line-height:.95;letter-spacing:-.06em}.qa{padding:20px 0;border-top:1px solid var(--line)}.qa button{border:0;background:none;width:100%;text-align:left;font:inherit;font-weight:900;display:flex;justify-content:space-between;cursor:pointer}.answer{display:none;color:var(--muted);padding:12px 28px 0 0}.qa.open .answer{display:block}
+    .booking{background:var(--lime)}.booking-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.booking h2{font-size:clamp(2.8rem,5vw,5rem);line-height:.9;letter-spacing:-.06em}.booking p{margin-top:20px;max-width:480px}
+    form{background:#fff;padding:28px;border-radius:18px;display:grid;gap:14px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{font-size:.75rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em}input,select,textarea{width:100%;margin-top:6px;padding:14px;border:1px solid var(--line);border-radius:9px;font:inherit;background:#fbfcfa}textarea{min-height:90px;resize:vertical}.submit{border:0;cursor:pointer;background:var(--dark);color:#fff;padding:15px;border-radius:9px;font-weight:900}
+    footer{background:#0d120e;color:#aeb7af;padding:30px 6vw}.footer-in{width:min(1100px,88vw);margin:auto;display:flex;justify-content:space-between;gap:20px;font-size:.82rem}
+    @media(max-width:1050px){.cards{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:800px){.video-grid{grid-template-columns:1fr}.video-poster{min-height:320px}.gallery{grid-template-columns:1fr}.gallery-img,.gallery-img.tall{min-height:280px}.links{display:none}.hero{min-height:700px}.cards,.steps,.adventure-grid,.faq-grid,.booking-grid{grid-template-columns:1fr}.featured{transform:none}.stats{gap:18px;flex-wrap:wrap}.section-head{display:block}.section-head p{margin-top:18px}.fields{grid-template-columns:1fr}.visual{min-height:330px}.footer-in{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a class="logo" href="#">MARRAKECH <span>QUAD + BUGGY HIRE</span></a>
+    <div class="links"><a href="#rides">Rides</a><a href="#adventure">The Experience</a><a href="#faq">FAQ</a></div>
+    <a class="nav-cta" href="#book">Book a Ride</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <span class="eyebrow">⚡ Off-road adventures • All skill levels</span>
+      <h1>MARRAKECH.<br><em>GO WILD.</em></h1>
+      <p>Marrakech quad bikes and off-road buggies built for big days, muddy tracks and unforgettable memories. Gear up and take on the trail.</p>
+      <div class="buttons"><a class="btn btn-primary" href="#book">Book your ride →</a><a class="btn btn-secondary" href="#rides">Explore packages</a></div>
+      <div class="stats"><div class="stat"><strong>4.9/5</strong><span>Guest rating</span></div><div class="stat"><strong>7 days</strong><span>Open weekly</span></div><div class="stat"><strong>16+</strong><span>Riders welcome</span></div></div>
+    </div>
+  </header>
+
+  <section id="rides">
+    <div class="wrap">
+      <div class="section-head"><h2>Pick your<br>adventure.</h2><p>Whether it’s your first time or you live for the mud, choose a session that fits your crew.</p></div>
+      <div class="cards">
+        <article class="card"><div class="card-photo" style="background-image:url('https://www.intotheblue.co.uk/images/Suppliers/Yorkshire-Activity-Centre/~th-500x500/~th-crop-YAC11-V350.jpg')"></div><span class="tag">Quick Ride</span><h3>30-Minute Session</h3><p>A short, action-packed off-road experience.</p><div class="price">400 MAD</div><ul><li>30-minute guided ride</li><li>Safety briefing & helmet</li><li>Perfect for first-timers</li></ul><a class="btn btn-primary" href="#book">Book this ride</a></article><article class="card"><div class="card-photo" style="background-image:url('https://www.intotheblue.co.uk/images/Suppliers/Yorkshire-Activity-Centre/~th-500x500/~th-crop-YAC11-V350.jpg')"></div><span class="tag">Quad</span><h3>Trail Taster</h3><p>Perfect for first-timers and quick thrills.</p><div class="price">260 MAD <small>/ rider</small></div><ul><li>60-minute guided ride</li><li>Safety briefing & helmet</li><li>Technical & woodland tracks</li></ul><a class="btn btn-primary" href="#book">Book this ride</a></article>
+        <article class="card featured"><div class="card-photo" style="background-image:url('https://cdn.getyourguide.com/img/tour/44eaa771743b2d15.jpeg/145.jpg')"></div><span class="tag">Most popular</span><h3>Quad + Buggy</h3><p>The full off-road experience for groups.</p><div class="price">780 MAD <small>/ rider</small></div><ul><li>2-hour guided adventure</li><li>Quad bike + buggy experience</li><li>Photos & refreshments included</li></ul><a class="btn btn-primary" href="#book">Book this ride</a></article>
+        <article class="card"><div class="card-photo" style="background-image:url('https://mediaim.expedia.com/localexpert/5276738/95f62497-318a-454c-b742-fbf0bf2dccb9.jpg')"></div><span class="tag">Buggy</span><h3>Wild Run</h3><p>More time, more mud, more horsepower.</p><div class="price">1,300 MAD <small>/ rider</small></div><ul><li>3-hour guided session</li><li>High-speed off-road sections</li><li>Ideal for groups & celebrations</li></ul><a class="btn btn-primary" href="#book">Book this ride</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="adventure" id="adventure">
+    <div class="wrap adventure-grid">
+      <div><span class="tag">The WildTrail experience</span><h2>NO ROADS.<br>NO BORING.</h2><p>Forget the ordinary day out. Our purpose-built off-road routes mix woodland, hills, mud and technical sections with professional guides who keep the fun moving.</p>
+        <div class="checklist"><div class="check"><b>✓</b><span>Safety-first briefing before every ride</span></div><div class="check"><b>✓</b><span>Helmets and essential riding gear provided</span></div><div class="check"><b>✓</b><span>Guided routes for beginners and experienced riders</span></div></div>
+      </div>
+      <div class="visual" style="background-image:linear-gradient(145deg,rgba(10,15,11,.05),rgba(10,15,11,.55)),url('https://jwc.gotra-resources.my.id/web-upload/1749016651-04-06-2025-tg81HQvlDdqcuaENI3Gb0jKrnYfwPMVy.jpg');background-size:cover;background-position:center;"><div class="visual-label">🏁 Mud. Machines. Memories.</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap"><div class="section-head"><h2>How it<br>works.</h2><p>Three simple steps between you and a proper off-road adventure.</p></div>
+      <div class="steps"><div class="step"><div class="num">01</div><h3>Choose your ride</h3><p>Pick a quad, buggy or combination session and select your preferred date.</p></div><div class="step"><div class="num">02</div><h3>Gear up</h3><p>Arrive, meet your guide and get fitted with your helmet and safety gear.</p></div><div class="step"><div class="num">03</div><h3>Hit the trail</h3><p>Follow the guide, open the throttle and enjoy the route at your pace.</p></div></div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="wrap">
+      <div class="section-head"><h2>See the<br>action.</h2><p>A taste of the terrain, machines and muddy moments waiting on the trail.</p></div>
+      <div class="gallery">
+        <div class="gallery-img" style="background-image:url('https://eazyriderz.com/cdn/shop/files/Gemini_Generated_Image_e3ikeje3ikeje3ik.webp?v=1772535942&width=533')"></div>
+        <div class="gallery-img tall" style="background-image:url('https://cdn.dealerspike.com/imglib/v1/800x600/imglib/Assets/Blog/64/56/6456f791-93d7-4c7f-a435-b4721661b0ee.jpg')"></div>
+        <div class="gallery-img" style="background-image:url('https://mediaim.expedia.com/localexpert/5276738/95f62497-318a-454c-b742-fbf0bf2dccb9.jpg')"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="media-showcase">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>WATCH THE<br>ADVENTURE.</h2>
+        <p>See riders hitting the sand, dunes and off-road trails. The clips below open the free-to-use videos on Pexels.</p>
+      </div>
+      <div class="video-grid">
+        <a class="video-card" href="https://www.pexels.com/video/man-having-fun-riding-an-atv-5486928/" target="_blank" rel="noopener">
+          <div class="video-poster" style="background-image:linear-gradient(180deg,transparent 35%,rgba(0,0,0,.78)),url('https://images.pexels.com/videos/5486928/outdoorchallenge-5486928.jpeg?auto=compress&dpr=1&h=750&w=1260')">
+            <span class="play">▶</span>
+            <div><b>QUAD BEACH RIDE</b><small>Watch riders enjoying an ATV adventure by the beach</small></div>
+          </div>
+        </a>
+        <a class="video-card" href="https://www.pexels.com/video/people-riding-on-a-buggy-at-the-desert-8271086/" target="_blank" rel="noopener">
+          <div class="video-poster" style="background-image:linear-gradient(180deg,transparent 35%,rgba(0,0,0,.78)),url('https://images.pexels.com/videos/8271086/pexels-photo-8271086.jpeg?auto=compress&dpr=1&h=750&w=1260')">
+            <span class="play">▶</span>
+            <div><b>BUGGY ADVENTURE</b><small>Watch people taking on the dunes in a beach buggy</small></div>
+          </div>
+        </a>
+      </div>
+      <p class="media-note">Video clips: Pexels contributors. Replace these with your own customer footage for a fully branded site.</p>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap faq-grid"><div><span class="tag">Good to know</span><h2>Questions?<br>We’ve got you.</h2></div><div>
+      <div class="qa"><button>Do I need experience? <span>+</span></button><div class="answer">No. Our guided sessions are designed for beginners as well as experienced riders. Your guide will explain everything before you start.</div></div>
+      <div class="qa"><button>What should I wear? <span>+</span></button><div class="answer">Wear comfortable outdoor clothing and closed-toe shoes you don't mind getting muddy. We provide helmets and required riding equipment.</div></div>
+      <div class="qa"><button>Can I book for a group? <span>+</span></button><div class="answer">Absolutely. Group sessions are ideal for birthdays, stag and hen parties, team days and family adventures. Use the booking form to tell us your group size.</div></div>
+      <div class="qa"><button>What happens if it rains? <span>+</span></button><div class="answer">A little rain usually makes the trails even more fun. If conditions become unsafe, we'll contact you about rearranging your session.</div></div>
+    </div></div>
+  </section>
+
+  <section class="booking" id="book">
+    <div class="wrap booking-grid">
+      <div><span class="tag">Ready?</span><h2>LET’S HIT<br>THE DIRT.</h2><p>Tell us what you’re after and we’ll get your adventure locked in. Replace the contact details below with your real business details before launch.</p></div>
+      <form onsubmit="event.preventDefault(); alert('Thanks! This demo form is ready to connect to your booking system.');">
+        <div class="fields"><label>Name<input required placeholder="Your name"></label><label>Phone<input required type="tel" placeholder="07..."></label></div>
+        <div class="fields"><label>Date<input required type="date"></label><label>Package<select><option>Trail Taster — 260 MAD</option><option>Quad + Buggy — 780 MAD</option><option>Wild Run — 1,300 MAD</option></select></label></div>
+        <label>Message<textarea placeholder="Group size, preferred time, special occasion..."></textarea></label>
+        <button class="submit" type="submit">Request a booking →</button>
+      </form>
+    </div>
+  </section>
+
+  <footer><div class="footer-in"><div><strong style="color:#fff">MARRAKECH QUAD + BUGGY HIRE</strong> — WildTrail</div><div>MARRAKECH, MOROCCO • +212 625 148076 • Marrakechquads87@gmail.com</div></div></footer>
+  <script>
+    document.querySelectorAll('.qa button').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        const item=btn.parentElement;
+        item.classList.toggle('open');
+        btn.querySelector('span').textContent=item.classList.contains('open')?'−':'+';
+      });
+    });
+  </script>
+</body>
+</html>
